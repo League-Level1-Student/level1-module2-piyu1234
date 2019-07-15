@@ -37,20 +37,20 @@ public class MinionTest {
 
 	@Test
 	public void testConstructor() {
-		Minion stuart = new Minion("Stuart", 1, "yellow", "");
+		Minion stuart = new Minion();
 		assertEquals("Stuart", stuart.getName());
-		assertEquals(1, stuart.getEyes());
+		assertEquals(1, stuart.getClass());
 		assertEquals("yellow", stuart.getColor());
 
-		Minion dave = new Minion("Dave", 2, "yellow", "");
+		Minion dave = new Minion();
 		assertEquals("Dave", dave.getName());
-		assertEquals(2, dave.getEyes());
+		assertEquals(2, dave.getClass());
 		assertEquals("yellow", dave.getColor());
 	}
 
 	@Test
 	public void testSetters() {
-		Minion stuart = new Minion("Stuart", 1, "yellow", "");
+		Minion stuart = new Minion();
 
 		stuart.setMaster("T. Rex");
 		assertEquals("T. Rex", stuart.getMaster());
